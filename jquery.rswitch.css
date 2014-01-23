@@ -1,0 +1,61 @@
+.rswitch {
+  display:inline-block;
+}
+.rswitch * {
+transition: all 0.2s;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.rswitch label {
+color: #DDD;
+}
+.rswitch .rswitch-label-active {
+color: blue;
+}
+.rswitch .rswitch-switch {
+display: inline-block;
+height: 12px;
+width: 25px;
+margin: 0 5px;
+border-radius: 10px;
+background-color: #DDD;
+position: relative;
+box-shadow: inset 0px 2px 1px rgba(10, 10, 10, .1);
+}
+.rswitch.rswitch-switch-off .rswitch-label-off {
+color: blue;
+}
+.rswitch.rswitch-switch-on .rswitch-label-on {
+color: blue;
+}
+.rswitch.rswitch-switch-off .rswitch-switch:before {
+content: ' ';
+display: inline-block;
+background-color: #fff;
+border-radius: 50%;
+width: 13px;
+height: 13px;
+position: absolute;
+left: -1px;
+top: -1px;
+box-shadow: 1px 1px 1px #DDD, inset 0 0 1px #EEE;
+}
+.rswitch.rswitch-switch-on .rswitch-switch {
+background-color: blue;
+}
+.rswitch.rswitch-switch-on .rswitch-switch:before {
+content: ' ';
+display: inline-block;
+background-color: #fff;
+border-radius: 50%;
+width: 13px;
+height: 13px;
+position: absolute;
+right: -1px;
+top: -1px;
+box-shadow: 1px 1px 1px #DDD, inset 0 0 1px #EEE;
+}
